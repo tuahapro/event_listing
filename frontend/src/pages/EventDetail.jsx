@@ -27,7 +27,7 @@ const EventDetail = () => {
 
   return (
     <div className="max-w-4xl mx-auto space-y-8">
-      <div className="h-96 bg-slate-200 dark:bg-slate-700 rounded-xl overflow-hidden">
+      <div className="h-96 bg-slate-200 rounded-xl overflow-hidden">
         {event.image && (
           <img
             src={event.image}
@@ -49,7 +49,7 @@ const EventDetail = () => {
           <span className="text-blue-600 font-medium">{event.category}</span>
         </div>
 
-        <div className="prose dark:prose-invert max-w-none">
+        <div className="prose max-w-none">
           <p>{event.description}</p>
         </div>
 

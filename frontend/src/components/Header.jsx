@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
-    <header className="border-b bg-white dark:bg-slate-50 sticky top-0 z-50 backdrop-blur-sm bg-white/80">
+    <header className="border-b bg-white sticky top-0 z-50 backdrop-blur-sm bg-white/80">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link
           to="/"

@@ -6,7 +6,7 @@ const Header = () => {
   const { isAuthenticated, logout } = useAuthStore();
 
   return (
-    <header className="border-b bg-white dark:bg-slate-950">
+    <header className="border-b bg-white dark:bg-slate-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link to="/" className="text-[30px] font-black">
           EventHub
@@ -27,7 +27,12 @@ const Header = () => {
               >
                 Dashboard
               </Link>
-              <Button onClick={logout} variant="outline" size="sm" className="text-[18px]">
+              <Button
+                onClick={logout}
+                variant="outline"
+                size="sm"
+                className="text-[18px]"
+              >
                 Logout
               </Button>
             </>
@@ -39,7 +44,9 @@ const Header = () => {
                 </Button>
               </Link>
               <Link to="/register">
-                <Button size="sm" className="text-[18px]">Register</Button>
+                <Button size="sm" className="text-[18px]">
+                  Register
+                </Button>
               </Link>
             </>
           )}

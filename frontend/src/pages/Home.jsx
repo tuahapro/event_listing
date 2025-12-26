@@ -16,7 +16,7 @@ const Home = () => {
         <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
           {categories.map((cat) => (
             <Link key={cat.id} to={`/events/category/${cat.name}`}>
-              <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow hover:shadow-lg transition-all cursor-pointer text-center border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 hover:-translate-y-1">
+              <div className="bg-white dark:bg-slate-50 p-6 rounded-xl shadow hover:shadow-lg transition-all cursor-pointer text-center border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 hover:-translate-y-1">
                 <span className="font-semibold text-lg">{cat.name}</span>
               </div>
             </Link>

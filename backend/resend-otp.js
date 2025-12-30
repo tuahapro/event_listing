@@ -8,7 +8,7 @@ const resendOTP = async () => {
     await mongoose.connect(process.env.MONGODB_URI);
     console.log("Connected to MongoDB");
 
-    const email = "4gamingtester@gmail.com";
+    const email = "mohammadtuaha63@gmail.com";
     const user = await User.findOne({ email });
 
     if (!user) {
